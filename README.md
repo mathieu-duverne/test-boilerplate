@@ -1,5 +1,5 @@
-# Test interne walaaxy
-Liste d'attente d'execution FIFO
+# Walaaxy test
+FIFO queuee
 
 1. npm i
 2. npx nx test backend
@@ -26,7 +26,7 @@ About the folder structure:
         └───styles 
 ```
 
-Les dependances ajouté :
+Dependencies added:
 
-    "cors": "^2.8.5", Allow xtern request 
+    "cors": "^2.8.5", Allow extern request 
     "supertest": "^7.0.0", API testing
