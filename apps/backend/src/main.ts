@@ -1,15 +1,14 @@
-import express from 'express';
+import express, { Request, Response } from 'express';
+import router from './routes/routes';
+
 
 const host = process.env.HOST ?? 'localhost';
 const port = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 const app = express();
 
-app.get('/', (req, res) => {
-  const test = process.env.TEST;
 
-  res.send({ message: 'Hello API' });
-});
+app.use('/', router);
 
 app.listen(port, host, () => {
   console.log(`[ ready ] http://${host}:${port}`);

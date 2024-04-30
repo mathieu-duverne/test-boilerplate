@@ -11,6 +11,10 @@
     }
   ],
   "compilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "build",
+    "rootDir": "src",
+    "lib": ["DOM"]
   }
 }
